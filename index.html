@@ -1,62 +1,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-<p id="thetime">
-</p>
-<p style="text-align: center;">
-  <img src="l.jpg" alt="" onclick="change();" />
-  <img src="r.jpg" alt="" onclick="change();"/>
-</p>
-<p style="text-align: center;">
-  <img src="napok.png" alt="" />
-</p>
-<p style="text-align: center;">
-  <img id="orarend" src="orarend1.png" alt="" />
-</p>
-
-<video width="400" controls>
-  <source src="marknak.mp4" type="video/mp4">
-  <source src="marknak.ogg" type="video/ogg">
-</video>
-
-<script>
-var paroshet=1;
-var image= document.getElementById('orarend');
-
-var referenceDate=new Date(2017,1,13,0,0,0);
-var currentTime=new Date();
-var subDate=currentTime-referenceDate;
-subDate=subDate/1000;
-var oneWeekInMinite;
-oneWeekInMinite=7*24*60*60;
-
-if(subDate<oneWeekInMinite){
-paroshet=1;
-}else{
-paroshet=0;
-}
-
-if(paroshet==1){
-	image.src="orarend1.png";
-}
-else{
-	image.src="orarend2.png";
-}
-
-
-function change(){
-
-if(paroshet==1){
-	image.src="orarend2.png";
-	paroshet=0;
-}
-else{
-	image.src="orarend1.png";
-	paroshet=1;
-}
-
-}
-</script>
-
+  <h1>Github hosting works!</h1>
 </body>
 </html>
